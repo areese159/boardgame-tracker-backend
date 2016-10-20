@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  'POST /login': 'AuthenticationController.login',
+  'POST /logout': 'AuthenticationController.logout',
+  'POST /register': 'AuthenticationController.register'
 
   /***************************************************************************
   *                                                                          *
