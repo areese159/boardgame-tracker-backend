@@ -21,7 +21,8 @@ module.exports = {
         return res.send(400, {error: "Invalid Username Or Password"});
       }
 
-      req.logIn(user, function(loginError) {
+      req.logIn(user, {session: false}, function(loginError) {
+        
         if(loginError) {
           return res.send(400, {error: loginError});
         }
