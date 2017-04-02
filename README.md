@@ -1,4 +1,4 @@
-# boardgame-tracker-backend
+# Sails-Auth-Server
 
 a [Sails](http://sailsjs.org) application
 
